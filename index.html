@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div id="header">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- ------- About ------------ -->
     <div id="about">
         <div class="container">
@@ -40,6 +40,7 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
@@ -49,9 +50,16 @@
                             <li><span>DBMS</span><br>MySQL</li>
                         </ul>
                     </div>
+                    <!-- <div class="tab-contents" id="experience">   
+                        <ul>
+                            <li><span>Currently - 2024</span><br>UI/UX Design Training</li>
+                            <li><span>2022</span><br>Intership web</li>
+                            <li><span>2020</span><br>Intership app</li>
+                        </ul>
+                    </div> -->
                     <div class="tab-contents" id="education">   
                         <ul>
-                            <li><span>Currently - 2024</span><br>BCA (Forth Sem) from Ajmer</li>
+                            <li><span>Currently - 2024</span><br>BCA (Forth Sem) from Computer Science Department, MDS University, Ajmer</li>
                             <li><span>2022</span><br>12th from Bandanwara, Ajmer</li>
                             <li><span>2020</span><br>10th from Bandanwara, Ajmer</li>
                         </ul>
@@ -67,7 +75,7 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fas fa-code"></i> 
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Developer</h2>
                     <p>A web developer is a programmer who develops World Wide Web applications using a client–server model. The applications typically use HTML, CSS, and JavaScript in the client, and any general-purpose programming language in the server.</p>
                     <a href="#">Learn more</a>
@@ -102,7 +110,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/work1.jpg">
+                    <img src="image/first.jpeg">
                     <div class="layer">
                         <h3>Music App</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates veniam sapiente impedit eligendi</p>
@@ -110,7 +118,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/work1.jpg">
+                    <img src="image/first.jpeg">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates veniam sapiente impedit eligendi</p>
@@ -153,20 +161,6 @@
         </div>
     </div>
 
-    <script>
-        let tablinks = document.getElementsByClassName("tab-links");
-        let tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    <script src="script.js"></script>
 </body> 
 </html>
